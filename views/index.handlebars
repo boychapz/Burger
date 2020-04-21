@@ -1,0 +1,67 @@
+<main>
+    <div class="container">
+
+        <div class="jumbotron" style="background-color: goldenrod;">
+            <h1 id="title" class="display-4 " style="text-align: center; "><strong>Eat A Burger</strong> <img
+                    src="../assets/Images/unnamed.png"></h1>
+
+            <hr class="my-4">
+            <div class="row">
+                <div id="search" class="col-sm-12">
+                    <panel>
+                        <form class="create-form" style="text-align: center;">
+                            <div class="form-group">
+                                <label for="newBurger"><strong> New Burger Name:</strong></label>
+                                <input type="text" id="newBurger" name="burger" placeholder="Enter new burger!">
+                                <button id="addBurger" type="submit" class="btn btn-primary"
+                                    style="background-color: darkgoldenrod;">Add <i
+                                        class="fas fa-hamburger"></i></button>
+
+                            </div>
+                        </form>
+                    </panel>
+                </div>
+            </div>
+            <div style="background-color: aliceblue;"></div>
+
+            <div class="row" id="rowShape">
+                <div class="col-sm-6">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading" id="notDevoured"><strong>Burgers to Eat</strong></div>
+                        <div class="panel-body">
+                            <ul>
+                                {{#each burgers}}
+                                {{#unless devoured}}
+                                <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
+                                <button type="button" class="eatburger btn btn-warning" id="devourMe"
+                                    data-id="{{this.id}}" data-newDevoured="{{devour}}"><i
+                                        class="fas fa-utensils"></i></button>
+                                <hr>
+                                {{/unless}}
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading" id="devoured"><strong>Burgers You've Devoured</strong></div>
+                        <div class="panel-body">
+                            <ul>
+                                {{#each burgers}}
+                                {{#if devoured}}
+                                <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
+                                {{!-- <button type="button" class="btn btn-danger" id="trashbutton" data-id="{{this.id}}"
+                                    data-newDevoured="{{devour}}"></button> --}}
+                                <hr>
+                                {{/if}}
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>

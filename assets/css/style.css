@@ -1,0 +1,42 @@
+.main {
+  background-color: goldenrod;
+}
+
+.col-sm-12 {
+  padding-bottom: 20px;
+  background-color: honeydew;
+  padding-top: 10px;
+}
+
+.panel-heading {
+  padding-top: 10px;
+  background: aliceblue;
+  text-align: center;
+}
+.col-sm-6 {
+  background: goldenrod;
+}
+
+#rowShape {
+  padding-top: 20px;
+}
+
+#notDevoured {
+  background: #dd3949;
+}
+
+#devoured {
+  background-color: #5c9701;
+}
+
+ul {
+  background-color: honeydew;
+}
+
+img {
+  height: 200px;
+}
+
+.jumbotron {
+  margin-top: 8px;
+}
