@@ -1,0 +1,20 @@
+{
+  "development": {
+    "username": "root",
+    "password": null,
+    "database": "burger_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+
+  "production": {
+    "username": "u62xwg8vfpjcv93t",
+    "password": "iw327j491eb9leqa",
+    "port": 3306,
+    "database": "azaz44j2wuogy556",
+    "host": "o677vxfi8ok6exrd.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  }
+}
