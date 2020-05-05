@@ -11,4 +11,4 @@ Attempt to complete homework assignment as described in instructions. If unable 
 
 # Screenshot
 
-![](assets/Images/burger.png)
+![](assets/Images/burger.PNG)
